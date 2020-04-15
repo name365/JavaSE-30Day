@@ -2,7 +2,7 @@ package git;
 
 public class School {
 	public static void main(String[] args) {
-		Student stu = new Student();
+		Students stu = new Students();
         stu.name = "小明";
         stu.age = 16;
 		
@@ -14,7 +14,7 @@ public class School {
         stu.say(tea.name, tea.age);
 	}	
 }
-class Student{
+class Students{
 	String name;
 	int age;
 	String major;
