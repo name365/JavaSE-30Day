@@ -6,7 +6,7 @@ public class Person {
 	int age;
 	/*
 	 * sex:1表示为男性
-	 * sex:0表示为女性
+	 * sex:2表示为女性
 	 */
 	int sex;
 	

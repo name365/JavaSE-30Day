@@ -23,14 +23,6 @@ public class PersonTest {
 		int newAge = p1.addAge(2);
 		System.out.println(p1.name + "的年龄为" + newAge);
 		
-		System.out.println(p1.age);	//20
-		
-		//*******************************
-		Person p2 = new Person();
-		p2.showAge();	//0
-		p2.addAge(10);
-		p2.showAge();	//10
-		
-		p1.showAge();	//20
+		System.out.println(p1.age);
 	}
 }
