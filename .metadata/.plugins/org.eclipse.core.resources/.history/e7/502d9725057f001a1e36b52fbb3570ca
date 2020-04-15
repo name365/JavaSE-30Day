@@ -1,0 +1,12 @@
+package git;
+
+public class Person {
+
+	String name;
+	int age;
+	int sex;
+	
+	public void study(){
+		
+	}
+}

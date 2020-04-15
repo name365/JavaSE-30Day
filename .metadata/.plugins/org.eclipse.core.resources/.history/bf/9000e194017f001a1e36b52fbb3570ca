@@ -1,0 +1,29 @@
+package git;
+
+public class School {
+	
+	
+}
+class Student{
+	String name;
+	int age;
+	String major;
+	String interests;
+	
+	public String say(){
+		String message = "subei" + 15 + "math" + "food";
+		return message;
+	}
+}
+
+class Teacher{
+	String name;
+	int age;
+	String teachAge;
+	String course;
+	
+	public String say(){
+		String message = name + age + teachAge + course;
+		return message;
+	}
+}

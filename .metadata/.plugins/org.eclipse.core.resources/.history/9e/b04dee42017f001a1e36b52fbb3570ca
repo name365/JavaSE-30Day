@@ -1,0 +1,16 @@
+package git;
+
+public class School {
+	String name;
+	int age;
+	String major;
+	String interests;
+	
+	public String say(){
+		String message = "subei" + 15 + "math" + "food";
+		return message;
+	}
+	
+	
+
+}
