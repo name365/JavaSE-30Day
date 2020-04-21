@@ -35,7 +35,7 @@ public class OverLoadTest {
 	}
 	
 	public void getSum(int i,String s){
-		
+		System.out.println("4");
 	}
 	
 	//以下3个是错误的重载
