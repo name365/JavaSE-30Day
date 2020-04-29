@@ -71,4 +71,16 @@ public class Customer {
 //		return false;
 //	}
 	
+	//手动实现
+//	@Override
+//	public String toString() {
+//		return "Customer[name = " + name + ",age = " + age + "]";
+//	}
+	
+	//自动实现
+	@Override
+	public String toString() {
+		return "Customer [name=" + name + ", age=" + age + "]";
+	}
+	
 }
