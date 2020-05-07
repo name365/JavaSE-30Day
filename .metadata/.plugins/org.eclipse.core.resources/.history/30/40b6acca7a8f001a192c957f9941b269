@@ -1,0 +1,22 @@
+package github.domain;
+
+import github.service.Status;
+
+public class Programer extends Employee{
+	private int memeberld;	//开发团队中的id
+	private Status status;
+	private Equipment equipment;
+	
+	public Programer() {
+		super();
+	}
+	
+	public Programer(int id, String name, int age, double salary, int memeberld, Status status, Equipment equipment) {
+		super(id, name, age, salary);
+		this.memeberld = memeberld;
+		this.status = status;
+		this.equipment = equipment;
+	}
+	
+	
+}

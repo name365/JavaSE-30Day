@@ -1,0 +1,21 @@
+package git3;
+
+public class Circle extends GeometricObject{
+	private double radius;
+
+	public Circle() {
+		super();
+		this.color = "white";
+		this.weight = 1.0;
+		this.radius = 1.0;
+	}
+
+	public Circle(double radius) {
+		super();
+		this.color = "white";
+		this.weight = 1.0;
+		this.radius = radius;
+	}
+	
+	
+}

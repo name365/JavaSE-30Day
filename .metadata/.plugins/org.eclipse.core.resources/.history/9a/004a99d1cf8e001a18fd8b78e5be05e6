@@ -1,0 +1,34 @@
+package github;
+
+import org.junit.Test;
+
+/*
+ * 一、java异常体系结构
+ * 
+ * java.lang.Throwable
+ * 		|----java.lang.Error:一般不编写针对性的代码进行处理
+ * 		|----java.lang.Exception:可以进行异常处理
+ * 			|----编译时异常(checked)
+ * 				|----IOEXception
+ * 					|----FileNotFoundException
+ * 				|----ClassNotFoundException
+ * 			|----运行时异常(unchecked)
+ * 				|----NullPointerException
+ * 				|----ArrayIndexOutOfBoundsException
+ * 				|----ClassCaseException
+ * 				|----NumberFormatException
+ * 				|----InputMismatchException
+ * 				|----ArithmaticException
+ * 
+ * 面试题:常见的异常有哪些？举例说明
+ * 
+ */
+public class ExceptionTest {
+
+	//NullPointerException
+	@Test
+	public void test1() {
+		int[] arr = new int[3];
+		System.out.println(arr[]);
+	}
+}

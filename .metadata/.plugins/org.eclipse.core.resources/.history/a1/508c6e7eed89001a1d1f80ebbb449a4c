@@ -1,0 +1,23 @@
+package github5;
+/*
+ * java中的JUnit单元测试
+ * 
+ * 步骤:
+ * 1.选中当前项目工程 --》 右键:build path --》 add libraries --》 JUnit 4 --》 下一步
+ * 2.创建一个Java类进行单元测试。
+ * 	 此时的Java类要求:①此类是公共的 ②此类提供一个公共的无参构造器 
+ * 3.此类中声明单元测试方法。
+ *   此时的单元测试方法:方法的权限是public,没有返回值，没有形参。
+ * 
+ * 4.此单元测试方法上需要声明注解:@Test
+ * 
+ */
+public class JUnit {
+	public static void main(String[] args) {
+		
+	}
+	
+	public void testEquals(){
+		
+	}
+}

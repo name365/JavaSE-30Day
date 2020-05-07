@@ -1,0 +1,33 @@
+package github3;
+/*
+ * 类的成员之四:代码块（或初始化块）
+ */
+public class BlockTest {
+
+}
+
+class Person{
+	String name;
+	int age;
+	static String desc = "我是一个青年";
+	
+	public Person(){
+		
+	}
+	
+	public Person(String name,int age){
+		this.name = name;
+		this.age = age;
+	}
+	
+	public void eat(){
+		System.out.println("吃饭");
+	}
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + "]";
+	}
+	
+	
+}

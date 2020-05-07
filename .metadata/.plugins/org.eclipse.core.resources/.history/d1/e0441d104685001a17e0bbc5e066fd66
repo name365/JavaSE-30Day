@@ -1,0 +1,5 @@
+package git.github.jdbc;
+
+public class JDBCUtil {
+
+}

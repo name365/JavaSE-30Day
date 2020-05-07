@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;day15/src/git&apos;&#x0D;&#x0A;- Original project: &apos;day13&apos;&#x0D;&#x0A;- Destination element: &apos;day15/src/git&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     github2.GeometricObject.java&#x0D;&#x0A;     github2.GeometricTest.java&#x0D;&#x0A;     github2.Circle.java&#x0D;&#x0A;     github2.MyRectangle.java" description="Copy compilation units" destination="=day15/src&lt;git" element1="/src&lt;github2{GeometricObject.java" element2="/src&lt;github2{GeometricTest.java" element3="/src&lt;github2{Circle.java" element4="/src&lt;github2{MyRectangle.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1588574109448" units="4" version="1.0"/>
+</session>

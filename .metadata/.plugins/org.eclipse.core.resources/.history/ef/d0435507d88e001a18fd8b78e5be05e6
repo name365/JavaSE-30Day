@@ -1,0 +1,11 @@
+package github2;
+/*
+ * try-catch-finally中finally的使用：
+ * 
+ * 1.finally是可选的。
+ * 2.
+ * 
+ */
+public class FinallyTest {
+
+}

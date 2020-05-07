@@ -1,0 +1,10 @@
+package github2;
+/*
+ * 异常处理的方式二：throws + 异常类型
+ * 
+ * 
+ * 
+ */
+public class ExceptionTest2 {
+
+}

@@ -1,0 +1,12 @@
+package github2;
+/*
+ * 异常的处理:抓抛模型
+ * 
+ * 过程一:“抛”：
+ * 
+ * 过程二:“抓”:
+ * 
+ */
+public class ExceptionTest1 {
+
+}

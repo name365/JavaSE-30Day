@@ -1,0 +1,19 @@
+package git3;
+
+public class C {
+
+}
+interface A {
+	int x= 0;
+}
+class B {
+	int x= 1;
+}
+class C extendsB implements A {
+	public void pX() {
+		System.out.println(x);
+	}
+	public static void main(String[] args) {
+		newC().pX();
+	}
+}

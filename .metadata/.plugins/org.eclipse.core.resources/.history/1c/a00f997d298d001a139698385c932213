@@ -1,0 +1,69 @@
+package github;
+
+package com.xsh.internet.socket.chat;
+
+import java.io.*;
+import java.net.Socket;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+ 
+public class ChatThread extends Thread {
+    private Socket socket;
+    private List<Socket> list;
+    public ChatThread(Socket socket, List<Socket> list){
+        this.socket = socket;
+        this.list = list;
+    }
+    public void run(){
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+            while(true) {
+                String data = br.readLine();
+//退出线程条件                if(data.equals("886")||data.equals("88")||data.equals("byebye")||data.equals("拜拜")||data.equals("再见")){
+                    //列表中也要删除该线程
+                    list.remove(socket);
+                    System.out.println(socket.getInetAddress().getHostAddress() + "退出服务器");
+                    break;
+                }
+                //将你要发送消息的ip地址拿出来
+                String regex = "((2(5[0-5]|[0-4]\\d))|[0-1]?\\d{1,2})(\\.((2(5[0-5]|[0-4]\\d))|[0-1]?\\d{1,2})){3}";
+                Pattern pattern = Pattern.compile(regex);
+                Matcher matcher = pattern.matcher(data);
+                String ip = null;
+                while (matcher.find()) {
+                    ip = matcher.group();
+                }
+                String[] str = data.split("\\]|:|：");
+                data = str[1];
+                //获取你要发送的ip地址的Socket，并将消息发送出去
+                for (int i = 0; i < list.size(); i++) {
+                    if (ip.equals(list.get(i).getInetAddress().getHostAddress())) {
+                        Socket socket = list.get(i);
+                        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+                        bw.write(this.socket.getInetAddress().getHostAddress() + "向您发送：" + data);
+                        bw.newLine();
+                        bw.flush();
+                        break;
+                    }
+                }
+            }
+        } catch (IOException e) {
+            System.out.println(socket.getInetAddress().getHostAddress() + "异常退出");
+            list.remove(socket);
+            try {
+                socket.close();
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        } finally {
+            try {
+                br.close();
+                socket.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}

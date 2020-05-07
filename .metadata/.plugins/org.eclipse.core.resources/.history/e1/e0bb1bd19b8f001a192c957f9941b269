@@ -1,0 +1,12 @@
+package github.service;
+/**
+  * 
+  * @Description 关于开发团队成员的管理：添加、删除等。
+  * @author subei Email:subei@163.com
+  * @version
+  * @date 2020年5月6日下午9:14:19
+  *
+ */
+public class TeamService {
+
+}

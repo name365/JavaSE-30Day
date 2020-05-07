@@ -1,0 +1,11 @@
+package github;
+
+public class SingletonTest {
+
+}
+class Bank{
+	
+	private Bank(){
+		
+	}
+}

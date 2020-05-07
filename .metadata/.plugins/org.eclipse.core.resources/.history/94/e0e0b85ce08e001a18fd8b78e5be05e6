@@ -1,0 +1,48 @@
+package github2;
+
+import java.net.Socket;
+import java.util.List;
+
+import static com.java.jy1.YL_ServerIO.*;
+
+public class YL_ServerThread {
+    private Socket s;
+    private List<Socket> Clientlist;
+
+
+    public YL_ServerThread(Socket s, List<Socket> centrist) {
+        this.s = s;
+        this.Clientlist = Clientlist;
+    }
+
+
+
+   
+    public void run() {
+        try {//1.处理新人加入问题
+            String name = YL_ServerIO.Receive(s);
+            for(Socket client:Clientlist){
+
+                YL_ServerIO.Send(client, "欢迎" + name + "来到了聊天室");
+                //告诉其他的Client来了一个新人
+            }
+            //2.发送信息的问题
+            while (true) {
+                String msg = YL_ServerIO.Receive(s);//msg = str
+                //把A发的内容传递给BCDE.....
+                for (Socket client:Clientlist) {
+                    if (!client.getInetAddress().equals(s.getInetAddress()) || client.getPort() != s.getPort()) {
+                        YL_ServerIO.Send(client,msg);
+                    }
+                }
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void start() {
+    }
+}

@@ -1,0 +1,12 @@
+package github.service;
+/**
+  * 
+  * @Description 自定义异常类
+  * @author subei Email:subei@163.com
+  * @version
+  * @date 2020年5月6日下午8:29:54
+  *
+ */
+public class TeamException {
+
+}

@@ -1,0 +1,27 @@
+package github.service;
+
+import github.domain.Employee;
+
+/**
+  * 
+  * @Description 负责将Data中的数据封装到Employee[]数组中，同时提供相关操作Employee[]的方法。
+  * @author subei Email:subei@163.com
+  * @version v1.0
+  * @date 2020年5月6日下午5:42:19
+  *
+ */
+public class NameListService {
+	private Employee[] employees;
+	
+	public NameListService(){
+		
+	}
+	
+	public Employee[] getAllEmployees(){
+		return null;
+	}
+	
+	public Employee getEmployee(int id) throws TeamException{
+		return null;
+	}
+}

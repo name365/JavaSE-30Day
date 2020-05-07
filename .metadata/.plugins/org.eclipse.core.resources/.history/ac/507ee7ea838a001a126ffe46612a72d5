@@ -1,0 +1,17 @@
+package git;
+
+import org.junit.Test;
+
+public class ReviewTest {
+
+	@Test
+	private void test1() {
+		int[] arr = new int[]{1,2,3};
+		print(arr);
+		
+	}
+	
+	public void print(Object obj){
+		System.out.println(obj);
+	}
+}

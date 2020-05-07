@@ -1,0 +1,7 @@
+package github2;
+/*
+ * 请使用继承的思想，设计CommonEmployee类和Manager类，
+ */
+public class EmployeeTest {
+
+}

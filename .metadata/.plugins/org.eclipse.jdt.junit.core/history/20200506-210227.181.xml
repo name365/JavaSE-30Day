@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="NameListServiceTest.testGetEmployee" project="MyProject03" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testcase name="testGetEmployee" classname="github.junit.NameListServiceTest" time="0.0"/>
+</testrun>

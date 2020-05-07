@@ -1,0 +1,8 @@
+package github.domain;
+
+public class Equipment {
+
+	String getDescription(){
+		
+	}
+}

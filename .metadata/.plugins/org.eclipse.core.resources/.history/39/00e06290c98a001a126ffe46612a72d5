@@ -1,0 +1,14 @@
+package github2;
+/*
+ * 单例的懒汉式实现
+ * 
+ */
+public class SingletonTest2 {
+
+}
+class Order{
+	//1.私有化类的构造器
+	private Order(){
+		
+	}
+}

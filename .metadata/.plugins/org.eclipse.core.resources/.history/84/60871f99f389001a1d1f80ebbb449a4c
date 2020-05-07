@@ -1,0 +1,20 @@
+package github5;
+/*
+ * 包装类的使用
+ * 1.java提供了8种基本数据类型对应的包装类，使得基本数据类型的变量具有类的特征
+ * 		基本数据类型		包装类
+ * 		byte			Byte
+ * 		short			Short
+ * 		int 			Integer
+ * 		long			Long
+ * 		float			Float
+ * 		double			Double
+ * 		boolean			Boolean
+ * 		char			Character
+ * 注意:其中Byte、Short、Integer、Long、Float、Double的父类是:Number
+ * 
+ * 
+ */
+public class WrapperTest {
+
+}

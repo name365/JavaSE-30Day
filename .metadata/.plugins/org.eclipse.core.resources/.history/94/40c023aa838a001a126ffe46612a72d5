@@ -1,0 +1,15 @@
+package git;
+
+import org.junit.Test;
+
+public class ReviewTest {
+
+	@Test
+	private void test1() {
+		
+	}
+	
+	public void print(Object obj){
+		System.out.println(obj);
+	}
+}

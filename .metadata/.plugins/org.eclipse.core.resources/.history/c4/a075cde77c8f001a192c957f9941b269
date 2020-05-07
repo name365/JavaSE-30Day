@@ -1,0 +1,5 @@
+package github.domain;
+
+public class Architect extends Designer{
+	private int stock;	//表示公司奖励的股票数量
+}

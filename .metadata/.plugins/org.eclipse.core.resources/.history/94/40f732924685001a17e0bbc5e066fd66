@@ -1,0 +1,26 @@
+package git.github.dao;
+
+import git.github.domain.Product;
+
+public interface IProductDao {
+
+	/**
+	  * 
+	  * @Description 新增product对象
+	  * @author subei
+	  * @date 2020年4月23日下午5:21:58
+	  * @param product
+	 */
+	public void addUser(Product product);
+
+	/**
+	  * 
+	  * @Description 更新操作：根据dir_id修改productName、supplier、cutoff
+	  * @author subei
+	  * @date 2020年4月23日下午5:22:27
+	  * @param product
+	 */
+	public void updateUser(Product product);
+
+	public void deleteProductById(int i);
+}

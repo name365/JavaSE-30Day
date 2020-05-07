@@ -1,0 +1,38 @@
+package github.dao;
+
+import java.awt.image.ImageConsumer;
+import java.awt.image.ImageProducer;
+
+public class ProductDaoImpl implements ImageProducer {
+
+	@Override
+	public void addConsumer(ImageConsumer arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public boolean isConsumer(ImageConsumer arg0) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void removeConsumer(ImageConsumer arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void requestTopDownLeftRightResend(ImageConsumer arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void startProduction(ImageConsumer arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

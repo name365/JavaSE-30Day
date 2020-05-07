@@ -1,0 +1,13 @@
+package github5;
+/*
+ * 接口的使用
+ * 1.接口使用interface来定义。
+ * 
+ * 
+ */
+public class InterfaceTest {
+
+}
+interface Flayable{
+	
+}

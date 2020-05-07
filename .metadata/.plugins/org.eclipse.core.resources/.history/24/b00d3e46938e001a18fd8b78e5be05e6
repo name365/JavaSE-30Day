@@ -1,0 +1,17 @@
+package git4;
+
+public class InnerClassTest {
+
+	public void method(){
+		//局部变量
+		int num = 10;
+		
+		class AA{
+			
+			public void show(){
+//				num = 20;	//Local variable num defined in an enclosing scope must be final or effectively final
+				System.out.println(num);
+			}
+		}
+	}
+}

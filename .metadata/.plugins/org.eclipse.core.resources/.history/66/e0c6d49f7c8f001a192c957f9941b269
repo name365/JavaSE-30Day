@@ -1,0 +1,26 @@
+package github.domain;
+
+import github.service.Status;
+
+public class Designer extends Programer {
+	private double bonus;
+
+	public Designer() {
+		super();
+	}
+
+	public Designer(int id, String name, int age, double salary, int memeberld, Status status, Equipment equipment,
+			double bonus) {
+		super(id, name, age, salary, memeberld, status, equipment);
+		this.bonus = bonus;
+	}
+
+	public double getBonus() {
+		return bonus;
+	}
+
+	public void setBonus(double bonus) {
+		this.bonus = bonus;
+	}
+	
+}

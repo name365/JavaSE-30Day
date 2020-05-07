@@ -1,0 +1,11 @@
+package githubjava8;
+
+public class SubClassTest {
+
+	public static void main(String[] args) {
+		
+	}
+}
+class SubClass implements CompareA{
+	
+}

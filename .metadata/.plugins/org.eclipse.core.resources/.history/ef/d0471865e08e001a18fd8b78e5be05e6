@@ -1,0 +1,26 @@
+package github2;
+
+import java.net.Socket;
+
+public class Client {
+	public static void main(String[] args) throws Exception {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入聊天的名称");
+		String name = sc.nextLine();
+
+		System.out.println("开始连接服务器");
+		Socket s = new Socket("localhost", 8088);
+		// 把名字发给服务器，send(s,msg)
+		YL_ServerIO.Send(s, name);
+		String response = YL_ServerIO.Receive(s);
+		if (response != null) {
+			System.out.println("连接成功");
+		}
+		YL_ClientSendThread cst = new YL_ClientSendThread(name, s);
+		YL_ClientReceiveThread crt = new YL_ClientReceiveThread(s);
+		cst.start();
+		crt.start();
+
+	}
+
+}

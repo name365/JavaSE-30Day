@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;day14/src/github&apos;&#x0D;&#x0A;- Original project: &apos;day09&apos;&#x0D;&#x0A;- Destination element: &apos;day14/src/github&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     github.ArrayUtil.java&#x0D;&#x0A;     github.ArrayUtilTest.java" description="Copy compilation units" destination="=day14/src&lt;github" element1="/src&lt;github{ArrayUtil.java" element2="/src&lt;github{ArrayUtilTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1588236951609" units="2" version="1.0"/>
+</session>

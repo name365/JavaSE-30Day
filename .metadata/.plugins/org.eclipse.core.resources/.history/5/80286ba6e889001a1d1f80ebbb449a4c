@@ -1,0 +1,8 @@
+package git3;
+
+public class GeometricObject {
+	protected  String  color;
+	protected  double  weight;
+	
+	
+}

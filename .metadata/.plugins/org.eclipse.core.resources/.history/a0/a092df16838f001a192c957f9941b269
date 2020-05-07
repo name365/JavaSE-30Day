@@ -1,0 +1,45 @@
+package github.domain;
+
+import com.atguigu.team.domain.Equipment;
+
+import github.service.Status;
+
+public class Programer extends Employee {
+	private int memeberld; // 开发团队中的id
+	private Status status;
+	private Equipment equipment;
+
+	public Programer() {
+		super();
+	}
+
+	public Programer(int id, String name, int age, double salary, Equipment equipment) {
+		super(id, name, age, salary);
+		this.equipment = equipment;
+	}
+
+	public int getMemeberld() {
+		return memeberld;
+	}
+
+	public void setMemeberld(int memeberld) {
+		this.memeberld = memeberld;
+	}
+
+	public Status getStatus() {
+		return status;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
+	}
+
+	public Equipment getEquipment() {
+		return equipment;
+	}
+
+	public void setEquipment(Equipment equipment) {
+		this.equipment = equipment;
+	}
+
+}

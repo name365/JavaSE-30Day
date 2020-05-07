@@ -1,0 +1,43 @@
+package git3;
+
+public class Circle extends GeometricObject{
+	private double radius;
+
+	public Circle() {
+		super();
+		this.color = "white";
+		this.weight = 1.0;
+		this.radius = 1.0;
+	}
+
+	public Circle(double radius) {
+		super();
+		this.color = "white";
+		this.weight = 1.0;
+		this.radius = radius;
+	}
+
+	public Circle(double radius,String color,double weight) {
+		super();
+		this.radius = radius;
+	}
+	
+	//计算圆的面积
+	public double findArea(){
+		return Math.PI * radius * radius;
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if(this.findArea() == findArea()){
+			return true;
+		}
+		return false;
+	}
+
+	@Override
+	public String toString() {
+		return "Circle [radius=" + radius + "]";
+	}
+	
+}

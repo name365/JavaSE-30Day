@@ -1,0 +1,9 @@
+package git.github.dao;
+
+import git.github.domain.Product;
+
+public interface IProductDao {
+
+	void addUser(Product product);
+
+}

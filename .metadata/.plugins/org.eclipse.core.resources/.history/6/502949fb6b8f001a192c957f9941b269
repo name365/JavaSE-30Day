@@ -1,0 +1,9 @@
+package github.domain;
+
+public class PC implements Equipment{
+
+	String model;
+	String display;
+	
+	
+}

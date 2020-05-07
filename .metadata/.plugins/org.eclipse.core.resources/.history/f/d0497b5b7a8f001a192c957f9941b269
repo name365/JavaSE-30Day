@@ -1,0 +1,9 @@
+package github.domain;
+
+public class Programer extends Employee{
+	private int memeberld;	//开发团队中的id
+	private Status status;
+	private double salary;
+	
+	
+}

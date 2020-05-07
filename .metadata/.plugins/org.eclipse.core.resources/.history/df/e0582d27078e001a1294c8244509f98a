@@ -1,0 +1,14 @@
+package github3;
+/*
+ * 抽象类的匿名子类
+ * 
+ */
+public class PersonTest {
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void method(Student s){
+		
+	}
+}

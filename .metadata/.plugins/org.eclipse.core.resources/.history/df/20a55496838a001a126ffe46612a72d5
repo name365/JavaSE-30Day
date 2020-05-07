@@ -1,0 +1,10 @@
+package git;
+
+import org.junit.Test;
+
+public class ReviewTest {
+
+	@Test
+	private void test1() {
+	}
+}

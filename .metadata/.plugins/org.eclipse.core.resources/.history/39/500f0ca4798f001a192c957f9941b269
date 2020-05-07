@@ -1,0 +1,15 @@
+package github.service;
+/**
+  * 
+  * @Description 表示员工的状态
+  * @author subei Email:subei@163.com
+  * @version
+  * @date 2020年5月6日下午5:09:18
+  *
+ */
+public class Status {
+	
+	public static final Status FREE = new Status();
+	public static final Status BUSY = new Status();
+	public static final Status VOCATION = new Status();
+}

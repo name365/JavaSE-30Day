@@ -1,0 +1,5 @@
+package git.github.test;
+
+public @interface test {
+
+}

@@ -1,0 +1,14 @@
+package git.github.test;
+
+import git.github.dao.IProductDao;
+import git.github.dao.impl.ProductDaolmpl;
+
+public class JDBCTest {
+
+	IProductDao productDao = new ProductDaolmpl();
+	@test
+	public void test() {
+
+	}
+	
+}

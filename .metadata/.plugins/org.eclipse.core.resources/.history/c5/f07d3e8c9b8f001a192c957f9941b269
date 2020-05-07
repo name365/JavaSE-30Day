@@ -1,0 +1,12 @@
+package github.service;
+/**
+  * 
+  * @Description
+  * @author subei Email:subei@163.com
+  * @version
+  * @date 2020年5月6日下午9:14:19
+  *
+ */
+public class TeamService {
+
+}

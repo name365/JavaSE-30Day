@@ -1,0 +1,13 @@
+package git.github.domain;
+
+public class Product {
+
+	  private String id;
+	  `productName` varchar(50) DEFAULT NULL,
+	  `dir_id` bigint(11) DEFAULT NULL,
+	  `salePrice` double(10,2) DEFAULT NULL,
+	  `supplier` varchar(50) DEFAULT NULL,
+	  `brand` varchar(50) DEFAULT NULL,
+	  `cutoff` double(2,2) DEFAULT NULL,
+	  `costPrice` double(10,2) DEFAULT NULL,
+}

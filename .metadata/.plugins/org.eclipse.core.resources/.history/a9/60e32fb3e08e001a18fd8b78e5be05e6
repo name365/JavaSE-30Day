@@ -1,0 +1,23 @@
+package github2;
+
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
+
+public class YL_Server {
+    public static void main(String[] args) throws Exception {
+        int port;
+        ServerSocket ss = new ServerSocket(8088);
+        List<Socket> Clientlist = new ArrayList<Socket>();
+        while (true) {
+            Socket s = ss.accept();//s接入了一个想连接服务器的Client
+            Clientlist.add(s);
+            System.out.println("正在为"+s+"提供服务");
+            //传递信息
+            YL_ServerThread st = new YL_ServerThread(s, Clientlist);
+            st.start();
+
+        }
+    }
+}

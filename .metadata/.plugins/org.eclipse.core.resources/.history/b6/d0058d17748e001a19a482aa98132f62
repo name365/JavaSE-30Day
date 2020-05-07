@@ -1,0 +1,5 @@
+package git3;
+
+public class ComparableCircle extends Circle {
+
+}

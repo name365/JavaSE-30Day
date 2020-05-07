@@ -1,0 +1,14 @@
+package github.domain;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class Product {
+
+	@Test
+	public void test() {
+		
+	}
+
+}

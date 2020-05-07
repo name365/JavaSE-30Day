@@ -1,0 +1,26 @@
+package github2;
+/*
+ * 单例设计模式:
+ * 1.所谓类的单例设计模式，就是采取一定的方法保证在整个的软件系统中，对某个类只能存在一个对象实例
+ *  
+ * 2.如何实现？
+ * 
+ * 
+ * 
+ */
+public class SingletonTest {
+	public static void main(String[] args) {
+//		Bank bank1 = new Bank(); 
+//		Bank bank2 = new Bank(); 
+		
+		
+		
+	}
+}
+class Bank{
+	
+	//1.私有化类的构造器
+	private Bank(){
+		
+	}
+}

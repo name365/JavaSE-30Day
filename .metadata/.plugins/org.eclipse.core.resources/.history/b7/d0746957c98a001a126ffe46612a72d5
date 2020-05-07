@@ -1,0 +1,8 @@
+package github2;
+/*
+ * 单例的懒汉式实现
+ * 
+ */
+public class SingletonTest2 {
+
+}

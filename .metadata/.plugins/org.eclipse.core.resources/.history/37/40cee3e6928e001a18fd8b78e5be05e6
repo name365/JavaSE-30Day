@@ -1,0 +1,13 @@
+package git4;
+
+public class InnerClassTest {
+
+	public void method(){
+		class AA{
+			
+			public void show(){
+				
+			}
+		}
+	}
+}

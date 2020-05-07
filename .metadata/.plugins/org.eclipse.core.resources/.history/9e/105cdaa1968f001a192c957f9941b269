@@ -1,0 +1,16 @@
+package github.junit;
+/**
+  * 
+  * @Description 对NameListService类的测试
+  * @author subei Email:subei@163.com
+  * @version
+  * @date 2020年5月6日下午8:37:51
+  *
+ */
+public class NameListServiceTest {
+
+	@Test
+	public void testGetAllEmployees(){
+		
+	}
+}

@@ -1,0 +1,29 @@
+package git4;
+
+import org.junit.Test;
+
+/*
+ * 如下两个题目输出结果相同吗？各是什么：
+ * 		Object o1= true? newInteger(1) : newDouble(2.0);
+ * 		System.out.println(o1);//
+ * 
+ * 		Object o2;
+ * 		if(true)
+ * 			o2 = new Integer(1);
+ *		else 
+ *			o2 = new Double(2.0);
+ *		System.out.println(o2);//
+ *
+ */
+public class InterViewTest {
+
+	@Test
+	public void test(){
+		
+	}
+	
+	@Test
+	public void test2(){
+		
+	}
+}

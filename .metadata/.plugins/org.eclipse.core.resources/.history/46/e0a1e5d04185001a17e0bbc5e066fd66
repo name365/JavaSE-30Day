@@ -1,0 +1,5 @@
+package git.github.dao.impl;
+
+public class ProductDaolmpl {
+
+}

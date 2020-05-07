@@ -1,0 +1,12 @@
+package git.github.test;
+
+public class JDBCUtil {
+
+	static{
+		try {
+			Class.forName("com.mysql");
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+}

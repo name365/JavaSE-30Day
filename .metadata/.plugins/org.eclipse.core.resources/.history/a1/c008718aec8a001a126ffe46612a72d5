@@ -1,0 +1,24 @@
+package github4;
+/*
+ * final:最终的
+ * 
+ * 1.final可以用来修饰的结构:类、方法、变量
+ * 
+ * 2.final用来修饰一个类:此类不能被其他类所继承。
+ * 		  比如:String类、System类、StringBuffer类
+ *  
+ * 
+ */
+public class FinalTest {
+
+}
+final class FianlA{
+	
+}
+//class B extends FinalA{     //错误，不能被继承。
+	
+//}
+
+class C extends String{
+	
+}

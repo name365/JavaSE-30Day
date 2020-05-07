@@ -1,0 +1,23 @@
+package github4;
+/*
+ * Object类中toString()的使用
+ * 
+ * 1.当我们输出一个引用对象时，实际上就是调用当前对象的toString()
+ * 2.Object类中toString的定义方法
+ * 	public String toString() {
+        return getClass().getName() + "@" + Integer.toHexString(hashCode());
+    }
+ * 
+ */
+public class ToStringTest {
+	public static void main(String[] args) {
+		
+		Customer cust1 = new Customer("Tom" ,21);
+		System.out.println(cust1.toString());	//github4.Customer@15db9742
+		System.out.println(cust1); 	//github4.Customer@15db9742
+		
+		
+		
+		
+	}
+}

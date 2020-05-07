@@ -1,0 +1,7 @@
+package github.domain;
+
+public class Printer {
+
+	String name;	//表示机器的名称
+	String type;	//表示机器的类型
+}

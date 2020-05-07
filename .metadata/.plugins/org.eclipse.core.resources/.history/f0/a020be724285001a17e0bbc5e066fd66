@@ -1,0 +1,5 @@
+package git.github.domain;
+
+public class Product {
+
+}

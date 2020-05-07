@@ -1,0 +1,101 @@
+package git.github.dao.impl;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import git.github.dao.IProductDao;
+import git.github.domain.Product;
+
+
+public class ProductDaolmpl implements IProductDao {
+	
+	@Override
+	public void addUser(Product product) {
+		
+		Connection connection = null;
+		Statement st = null;
+		try {
+			//1.注册驱动
+			Class.forName("com.mysql.jdbc.Driver");
+			//2.获取连接
+			connection = DriverManager.getConnection("jdbc:mysql:///work","root","root");
+			//3.获取sql对象
+			st = connection.createStatement();
+			//4.执行sql
+			st.executeUpdate("insert into user(username,password,age) values('" + user.getUsername() + "','" + user.getPassword() + "'," + user.getAge() + ")");
+		} catch (Exception e) {
+			System.out.print("报错了:");
+			System.out.println(e);
+		}finally{	//这里的代码，不论前面是否报错都会执行。
+			//5.关闭连接
+			try {
+				if(st !=null){	//非空情况才执行关闭操作
+					st.close();
+				}
+			} catch (SQLException e) {
+				System.out.print("又报错了");
+				System.out.println(e);
+			}
+			try {
+				connection.close();
+			} catch (SQLException e) {
+				System.out.print("仍然报错了");
+				System.out.println(e);
+			}
+			
+		}
+	}
+
+	@Override
+	public void updateUser(Product product) {
+		
+		String sql = "update user set username = ? ,password = ? ,age = ? where uid = ?";
+		Connection connection = null;
+		PreparedStatement pst = null;
+		try {
+			//1.注册驱动
+			Class.forName("com.mysql.jdbc.Driver");
+			//2.获取连接
+			connection = DriverManager.getConnection("jdbc:mysql:///work","root","root");
+			//3.获取sql执行对象
+//			Statement st = connection.createStatement();
+			pst = connection.prepareStatement(sql);
+			
+			pst.setString(1, product.getUsername()); //第一个？的值
+			pst.setString(2, user.getPassword());	//第二个？的值
+			pst.setInt(3, user.getAge()); //第三个？的值
+			pst.setInt(4, user.getUid()); //第四个？的值
+			System.out.println("=====" + user);
+			
+			//4.执行sql
+//			st.executeUpdate("sql");	//之前
+			pst.executeUpdate();
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				if(pst != null){
+					pst.close();					
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}finally{
+				try {
+					if(connection != null){
+						connection.close();
+					}
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		
+	}
+
+}
+

@@ -1,0 +1,56 @@
+package github;
+
+import java.io.*;
+import java.net.Socket;
+import java.util.Scanner;
+ 
+public class ChatClient {
+    public static void main(String[] args){
+        //读和写两个线程同时运行，可以实现边读边写
+        try {
+            Socket socket = new Socket("10.9.21.235", 9999);
+            System.out.println("成功加入服务器");
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+                        while(true) {
+                            System.out.println(br.readLine());
+                        }
+                    } catch (IOException e) {
+                        System.out.println("退出服务器");
+                    }
+                }
+            }).start();
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
+                        Scanner input = new Scanner(System.in);
+                        while(true) {
+                            String data = input.next();
+                            bw.write(data);
+                            bw.newLine();
+                            bw.flush();
+                            if(data.equals("886")||data.equals("88")||data.equals("byebye")||data.equals("拜拜")||data.equals("再见")){
+                                break;
+                            }
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } finally {
+                        try {
+                            socket.close();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }).start();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

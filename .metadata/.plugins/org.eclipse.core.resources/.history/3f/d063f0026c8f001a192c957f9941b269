@@ -1,0 +1,14 @@
+package github.domain;
+
+public class PC implements Equipment{
+
+	String model;
+	String display;
+	@Override
+	public String getDescription() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}

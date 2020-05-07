@@ -1,0 +1,9 @@
+package github.domain;
+
+public class NoteBook implements Equipment{
+
+	String model;
+	double price;
+	
+	public double
+}

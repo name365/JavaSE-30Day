@@ -1,0 +1,11 @@
+package github3;
+/*
+ * 如何自定义异常类？
+ * 1.
+ * 2.
+ * 3.
+ * 
+ */
+public class MyException extends RuntimeException{
+
+}

@@ -1,0 +1,39 @@
+package github;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+ 
+public class ChatServer {
+    public static void main(String[] args){
+        ServerSocket listen = null;
+        Socket socket = null;
+        try {
+            //创建服务器，设置端口号为9999
+            listen = new ServerSocket(9999);
+            System.out.println("服务器已启动");
+            //创建线程安全的列表，用来存放客户端
+            List<Socket> list = Collections.synchronizedList(new ArrayList<>());
+            while(true){
+                //监听客户
+                socket = listen.accept();
+                System.out.println(socket.getInetAddress().getHostAddress() + "加入服务器");        
+                list.add(socket);
+                //创建线程
+                new ChatThread(socket, list).start();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                socket.close();
+                listen.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+package git.github.test;
+
+import org.junit.Test;
+
+import cn.itsourse.doma.User;
+import git.github.dao.IProductDao;
+import git.github.dao.impl.ProductDaolmpl;
+
+public class JDBCTest {
+
+	IProductDao productDao = new ProductDaolmpl();
+	@Test
+	public void test() {
+
+	}
+	
+}

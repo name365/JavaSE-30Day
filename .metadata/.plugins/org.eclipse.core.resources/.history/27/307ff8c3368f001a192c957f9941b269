@@ -1,0 +1,15 @@
+package github3;
+
+public class StudentTest {
+
+}
+class Student{
+	private int id;
+	public void regist(int id){
+		if(id > 0){
+			this.id = id;
+		}else{
+			System.out.println("您输入的数据非法！");
+		}
+	}
+}

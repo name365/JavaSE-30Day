@@ -1,0 +1,26 @@
+package git;
+
+import org.junit.Test;
+
+public class ReviewTest {
+	
+	//手动写的和自动生成的equals()的区别
+	@Test
+	public void test2(){
+		
+	}
+
+	//数组也作为Object类的子类出现，可以调用Object类中声明的方法
+	@Test
+	public void test1() {
+		int[] arr = new int[]{1,2,3};
+		print(arr);
+		
+		System.out.println(arr.getClass().getSuperclass());
+		
+	}
+	
+	public void print(Object obj){
+		System.out.println(obj);
+	}
+}

@@ -1,0 +1,17 @@
+package github5;
+/*
+ * 接口的应用:代理模式
+ * 
+ * 
+ */
+public class NetWorkTest {
+
+}
+interface NetWork{
+	public void browse();
+	
+}
+class Server implements NetWork{
+	
+	
+}

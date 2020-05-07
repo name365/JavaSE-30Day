@@ -1,0 +1,14 @@
+package github5;
+/*
+ * java中的JUnit单元测试
+ * 
+ * 步骤:
+ * 1.选中当前项目工程 --》 右键:build path --》 add libraries --》 JUnit 4 --》 下一步
+ * 2.
+ * 
+ */
+public class JUnit {
+	public static void main(String[] args) {
+		
+	}
+}

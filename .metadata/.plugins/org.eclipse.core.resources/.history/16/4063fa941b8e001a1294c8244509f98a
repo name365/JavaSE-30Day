@@ -1,0 +1,56 @@
+package github5;
+/*
+ * 接口的使用
+ * 1.接口使用interface来定义。
+ * 2.在Java中:接口和类是并列的两个结构
+ * 3.如何去定义两个接口:定义接口中的成员
+ * 	》 3.1 JDK7及以前:只能定义全局常量和抽象方法
+ * 		》全局常量:public static final的,但是书写中，可以省略不写。
+ * 		》抽象方法:public abstract的
+ * 
+ *  》 3.2 JDK8:除了全局常量和抽象方法之外，还可以定义静态方法、默认方法(略)。
+ * 
+ * 4.接口中不能定义构造器！意味着接口不可以实例化。
+ * 
+ * 5.Java开发中，接口通过让类去实现(implements)的方式来使用。
+ *   如果实现类覆盖了接口中的所有方法，则此实现类就可以实例化
+ *   如果实现类没有覆盖接口中所有的抽象方法，
+ * 
+ */
+public class InterfaceTest {
+	public static void main(String[] args) {
+		System.out.println(Flayable.MAX_SPEED);
+		System.out.println(Flayable.MIN_SPEED);
+	}
+}
+interface Flayable{
+	
+	//全局变量
+	public static final int MAX_SPEED = 7900;	
+	int MIN_SPEED = 1;//省略了public static final 
+	
+	//抽象方法
+	public abstract void fly();
+	
+	void stop();//省略了public abstract 
+	//Interfaces cannot have constructors
+//	public Flayable(){
+//		
+//	}
+}
+class Plane implements Flayable{
+
+	@Override
+	public void fly() {
+		System.out.println("飞机通过引擎起飞");
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}
+

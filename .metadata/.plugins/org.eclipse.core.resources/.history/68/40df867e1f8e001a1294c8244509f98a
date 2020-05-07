@@ -1,0 +1,30 @@
+package github5;
+/*
+ * 接口的使用
+ * 
+ * 
+ */
+public class USBTest {
+
+}
+interface USB{
+	//常量:定义了长、宽
+	void start();
+	
+	void stop();
+}
+class Flash implements USB{
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

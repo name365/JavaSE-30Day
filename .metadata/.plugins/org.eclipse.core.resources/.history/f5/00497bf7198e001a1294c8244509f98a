@@ -1,0 +1,17 @@
+package github5;
+/*
+ * 接口的使用
+ * 1.接口使用interface来定义。
+ * 2.在Java中:接口和类是并列的两个结构
+ * 3.如何去定义两个接口:定义接口中的成员
+ * 	》 3.1 JDK7及以前:
+ * 
+ *  》 3.2 JDK8:
+ * 
+ */
+public class InterfaceTest {
+
+}
+interface Flayable{
+	
+}

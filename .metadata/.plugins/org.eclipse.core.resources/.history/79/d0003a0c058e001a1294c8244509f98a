@@ -1,0 +1,10 @@
+package github2;
+/*
+ * 对于Manager类来说，他既是员工，还具有奖金(bonus)的属性。
+ * 请使用继承的思想，设计CommonEmployee类和Manager类，
+ * 
+ */
+public class Manager extends Employee{
+
+	private double bonus;
+}

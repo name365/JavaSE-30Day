@@ -1,0 +1,11 @@
+package github5;
+/*
+ * java中的JUnity单元测试
+ * 
+ * 
+ */
+public class JUnit {
+	public static void main(String[] args) {
+		
+	}
+}

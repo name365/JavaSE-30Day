@@ -1,0 +1,29 @@
+package github2;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+/*
+ * 异常处理的方式二：throws + 异常类型
+ * 
+ * 
+ * 
+ */
+public class ExceptionTest2 {
+
+	
+	public static void method1(){
+		File file = new File("hello1.txt");
+		FileInputStream fis = new FileInputStream(file);
+		
+		int data = fis.read();
+		while(data != -1){
+			System.out.print((char)data);
+			data = fis.read();
+		}
+		
+		fis.close();
+		
+		System.out.println("hahaha!");
+	}
+}
