@@ -14,7 +14,7 @@ import java.util.Properties;
 public class ClassLoaderTest {
 
     @Test
-    public void test1(){
+    public void test(){
         //对于自定义类，使用系统类加载器进行加载
         ClassLoader classLoader = ClassLoaderTest.class.getClassLoader();
         System.out.println(classLoader);

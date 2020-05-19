@@ -1,0 +1,31 @@
+package github4;
+
+/**
+ * @author subei
+ * @create 2020-05-19 9:43
+ */
+public class Boy {
+    private Girl girl;
+
+    public Boy() {
+    }
+
+    public Boy(Girl girl) {
+        this.girl = girl;
+    }
+
+    public Girl getGirl() {
+        return girl;
+    }
+
+    public void setGirl(Girl girl) {
+        this.girl = girl;
+    }
+
+    @Override
+    public String toString() {
+        return "Boy{" +
+                "girl=" + girl +
+                '}';
+    }
+}
